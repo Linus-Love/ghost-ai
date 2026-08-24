@@ -30,6 +30,7 @@ export function ProjectSidebar({ isOpen, onClose, className }: ProjectSidebarPro
         className
       )}
       aria-hidden={!isOpen}
+      inert={!isOpen ? true : undefined}
     >
       <div className="flex h-14 shrink-0 items-center justify-between border-b border-surface-border px-4">
         <h2 className="text-sm font-semibold text-copy-primary">Projects</h2>
