@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div className="flex min-h-screen items-center justify-center">ghost AI</div>;
+  return (
+    <div className="flex h-full items-center justify-center text-copy-secondary">
+      ghost AI
+    </div>
+  );
 }
