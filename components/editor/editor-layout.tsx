@@ -24,7 +24,7 @@ export function EditorLayout({ children }: EditorLayoutProps) {
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
       />
-      <main className="min-h-0 flex-1 overflow-hidden bg-base">{children}</main>
+      <main className="min-h-0 flex-1 overflow-y-auto bg-base">{children}</main>
     </div>
   )
 }

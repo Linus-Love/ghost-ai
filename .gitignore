@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.env.local
 
 # vercel
 .vercel
@@ -39,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+C:\Users\USER\Downloads\ghost-ai\context\current-issues.md
+temp-assets
