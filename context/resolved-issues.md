@@ -27,3 +27,31 @@ Ecmascript file had an error
 
     at <unknown> (Error: ./app/sign-in/[[...rest]]/page.tsx:5:10)
     at <unknown> (Error: (./app/sign-in/[[...rest]]/page.tsx:5:10)
+
+
+    When I run the application, I'm faced with the following issue: 
+Runtime Error
+
+
+
+Clerk: <SignedOut> is not available in @clerk/nextjs Core 3. Learn more at https://clerk.com/err/signedout-is-not-available-in-clerk-nextjs.
+components/auth/auth-shell.tsx (355:5) @ AuthShell
+
+
+  353 |
+  354 |   return (
+> 355 |     <SignedOut>
+      |     ^
+  356 |       <div className="flex h-screen w-screen overflow-hidden bg-base">
+  357 |         <LeftPanel />
+  358 |
+Call Stack
+16
+
+Show 14 ignore-listed frame(s)
+AuthShell
+components/auth/auth-shell.tsx (355:5)
+SignInPage
+app/sign-in/[[...rest]]/page.tsx (6:10)
+
+Console Error

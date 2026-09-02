@@ -4,7 +4,12 @@ import { NextResponse } from "next/server";
 // Define public routes that don't require authentication
 const isPublicRoute = (req: Request) => {
   const url = new URL(req.url);
-  return url.pathname.startsWith("/sign-in") || url.pathname.startsWith("/sign-up");
+  return (
+    url.pathname.startsWith("/sign-in") ||
+    url.pathname.startsWith("/sign-up") ||
+    url.pathname.startsWith("/sso-callback") ||
+    url.pathname.startsWith("/verify-email")
+  );
 };
 
 export default clerkMiddleware(async (auth, req) => {

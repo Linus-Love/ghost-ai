@@ -61,3 +61,4 @@ Update this file whenever the current phase, active feature, or implementation s
 - 2026-09-01: Completed auth implementation per `context/feature-specs/03-auth.md`.
 - 2026-09-01: Fixed runtime `Headers.append` / `immutable` error in development.
 - 2026-09-01: Updated editor workspace UI to match design specifications with 50/50 left/right layout, accent-colored left sidebar, and proper typography.
+- 2026-09-02: Replaced Clerk prebuilt `<SignIn>` / `<SignUp>` with custom auth UI matching the design spec (`components/auth/auth-shell.tsx`). Added SSO callback and email verification pages. Wired up Clerk v7 `SignInFuture` / `SignUpFuture` API for Google/GitHub OAuth and email-code flows. Proxy updated to allow `/sso-callback` and `/verify-email` routes. `tsc --noEmit`, `npm run lint`, and `npm run build` all pass.
